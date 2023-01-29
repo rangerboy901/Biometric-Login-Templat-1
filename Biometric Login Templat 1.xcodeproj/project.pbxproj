@@ -14,6 +14,14 @@
 		50A66A9E2986C4F2000CFA27 /* Biometric_Login_Templat_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66A9D2986C4F2000CFA27 /* Biometric_Login_Templat_1Tests.swift */; };
 		50A66AA82986C4F2000CFA27 /* Biometric_Login_Templat_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AA72986C4F2000CFA27 /* Biometric_Login_Templat_1UITests.swift */; };
 		50A66AAA2986C4F2000CFA27 /* Biometric_Login_Templat_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AA92986C4F2000CFA27 /* Biometric_Login_Templat_1UITestsLaunchTests.swift */; };
+		50A66ABB2986C60A000CFA27 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66ABA2986C60A000CFA27 /* LoginViewModel.swift */; };
+		50A66ABD2986C627000CFA27 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66ABC2986C627000CFA27 /* Credentials.swift */; };
+		50A66ABF2986C660000CFA27 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66ABE2986C660000CFA27 /* LoginView.swift */; };
+		50A66AC12986C686000CFA27 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AC02986C686000CFA27 /* Authentication.swift */; };
+		50A66AC32986C6A7000CFA27 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AC22986C6A7000CFA27 /* APIService.swift */; };
+		50A66AC52986C6CD000CFA27 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AC42986C6CD000CFA27 /* UIApplication+Extension.swift */; };
+		50A66AC72986C6F1000CFA27 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A66AC62986C6F1000CFA27 /* KeychainStorage.swift */; };
+		50A66ACE2986C7B2000CFA27 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 50A66ACD2986C7B2000CFA27 /* SwiftKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,13 @@
 		50A66AA32986C4F2000CFA27 /* Biometric Login Templat 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Biometric Login Templat 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A66AA72986C4F2000CFA27 /* Biometric_Login_Templat_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometric_Login_Templat_1UITests.swift; sourceTree = "<group>"; };
 		50A66AA92986C4F2000CFA27 /* Biometric_Login_Templat_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Biometric_Login_Templat_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50A66ABA2986C60A000CFA27 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		50A66ABC2986C627000CFA27 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		50A66ABE2986C660000CFA27 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		50A66AC02986C686000CFA27 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		50A66AC22986C6A7000CFA27 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		50A66AC42986C6CD000CFA27 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		50A66AC62986C6F1000CFA27 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A66ACE2986C7B2000CFA27 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +90,7 @@
 		50A66A802986C4F1000CFA27 = {
 			isa = PBXGroup;
 			children = (
+				50A66A8C2986C4F1000CFA27 /* Biometric_Login_Templat_1App.swift */,
 				50A66A8B2986C4F1000CFA27 /* Biometric Login Templat 1 */,
 				50A66A9C2986C4F2000CFA27 /* Biometric Login Templat 1Tests */,
 				50A66AA62986C4F2000CFA27 /* Biometric Login Templat 1UITests */,
@@ -94,8 +111,10 @@
 		50A66A8B2986C4F1000CFA27 /* Biometric Login Templat 1 */ = {
 			isa = PBXGroup;
 			children = (
-				50A66A8C2986C4F1000CFA27 /* Biometric_Login_Templat_1App.swift */,
-				50A66A8E2986C4F1000CFA27 /* ContentView.swift */,
+				50A66AB92986C522000CFA27 /* Services */,
+				50A66AB82986C518000CFA27 /* Models */,
+				50A66AB62986C503000CFA27 /* ViewModel */,
+				50A66AB72986C50D000CFA27 /* Views */,
 				50A66A902986C4F2000CFA27 /* Assets.xcassets */,
 				50A66A922986C4F2000CFA27 /* Preview Content */,
 			);
@@ -127,6 +146,42 @@
 			path = "Biometric Login Templat 1UITests";
 			sourceTree = "<group>";
 		};
+		50A66AB62986C503000CFA27 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				50A66ABA2986C60A000CFA27 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		50A66AB72986C50D000CFA27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50A66A8E2986C4F1000CFA27 /* ContentView.swift */,
+				50A66ABE2986C660000CFA27 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50A66AB82986C518000CFA27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50A66ABC2986C627000CFA27 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50A66AB92986C522000CFA27 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50A66AC02986C686000CFA27 /* Authentication.swift */,
+				50A66AC22986C6A7000CFA27 /* APIService.swift */,
+				50A66AC42986C6CD000CFA27 /* UIApplication+Extension.swift */,
+				50A66AC62986C6F1000CFA27 /* KeychainStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +198,9 @@
 			dependencies = (
 			);
 			name = "Biometric Login Templat 1";
+			packageProductDependencies = (
+				50A66ACD2986C7B2000CFA27 /* SwiftKeychainWrapper */,
+			);
 			productName = "Biometric Login Templat 1";
 			productReference = 50A66A892986C4F1000CFA27 /* Biometric Login Templat 1.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 50A66A802986C4F1000CFA27;
+			packageReferences = (
+				50A66ACC2986C7B2000CFA27 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 50A66A8A2986C4F1000CFA27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				50A66A8F2986C4F1000CFA27 /* ContentView.swift in Sources */,
+				50A66AC32986C6A7000CFA27 /* APIService.swift in Sources */,
+				50A66AC52986C6CD000CFA27 /* UIApplication+Extension.swift in Sources */,
 				50A66A8D2986C4F1000CFA27 /* Biometric_Login_Templat_1App.swift in Sources */,
+				50A66ABD2986C627000CFA27 /* Credentials.swift in Sources */,
+				50A66ABF2986C660000CFA27 /* LoginView.swift in Sources */,
+				50A66ABB2986C60A000CFA27 /* LoginViewModel.swift in Sources */,
+				50A66AC12986C686000CFA27 /* Authentication.swift in Sources */,
+				50A66AC72986C6F1000CFA27 /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +488,7 @@
 				DEVELOPMENT_TEAM = W59W3QVKXJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your credentials";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +518,7 @@
 				DEVELOPMENT_TEAM = W59W3QVKXJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your credentials";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +653,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		50A66ACC2986C7B2000CFA27 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		50A66ACD2986C7B2000CFA27 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 50A66ACC2986C7B2000CFA27 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50A66A812986C4F1000CFA27 /* Project object */;
 }
